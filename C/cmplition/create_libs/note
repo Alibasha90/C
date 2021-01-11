@@ -1,0 +1,49 @@
+static linking processs is:-
+===========================
+
+step -1 :
+
+ 	generate object files for all .c files ..
+
+
+		gcc -c f1.c f2.c 
+step -2 :-
+	
+	make a static library for them commands are 
+
+	 	ar rcs static_lib.a f1.o f2.o
+
+
+
+step -3 :- 
+
+	genrate executable files so.
+
+		gcc main.c -o myexe static_lib.a
+
+
+this is the process to generate static library.
+
+
+
+dynamic library :-
+==================
+
+step-1 :- 
+
+	gcc -c -fPIC f1.c f2.c 
+
+		or 
+
+	gcc -c -Wall -Werror -fpic f1.c f2.c
+
+
+step-2 :-
+ 	 
+	gcc -shared -o dyno_lib.so f1.o f2.o
+
+
+step-3 :-
+
+	
+

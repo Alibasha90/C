@@ -1,0 +1,22 @@
+#method-2
+
+CC=gcc
+CFLAGS=-Wall -Werror
+
+all:demo
+
+
+
+%.o : %.c
+	$(CC) -o $(CFLAGS) $<
+
+
+demo:demo.o
+	$(CC) demo.o -o demo
+
+demo.o:demo.c
+	$(CC) -c demo.c
+
+
+clear:
+	rm *.o  all

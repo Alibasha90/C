@@ -1,0 +1,16 @@
+here i have taken the program and there i started compile it throgh the fatal error ..
+
+because myheader was not include in path here we can 2 thing:-
+
+1) include path 
+2) compile by include all inclusion files
+	ex:- gcc -c *.c I.
+	I ---> means include the present working directory.
+	. ---> present working directory.
+
++ in the program myheader.h is statically linked at linker stage.
+	add.c sub.c myheader.h all static 
++ dynamic linking is printf function and atol function.
+
+how dynamically linked ?
+
