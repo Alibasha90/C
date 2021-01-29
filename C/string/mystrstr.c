@@ -37,5 +37,5 @@ int main()
 
 	ptr=mystr(s1,s2);
 
-	printf("%ld-- %s",ptr-s1,s2);
+	printf("%ld-- %s\n",ptr-s1,s2);
 }
